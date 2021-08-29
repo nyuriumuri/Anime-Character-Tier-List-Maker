@@ -1,0 +1,104 @@
+:root{
+	--barSize: 100px;
+}
+.RankingBar{
+
+	display:flex;
+	flex-direction: row;
+	border-style: solid;
+	min-height:var(--barSize);
+	border-width: 2px!important;
+	border-color: white !important;
+	/* padding-right:0px !important; */
+
+
+}
+
+.CharacterBar{
+	padding: 0 !important;
+}
+.RankingImagesWrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.RankingImg{
+
+	height:var(--barSize);
+  flex:1;
+  /* height:100%; */
+}
+
+.RankingImgWrapper{
+	position: relative;
+	/* height:inherit; */
+}
+.RankingCol{
+	min-height:var(--barSize);
+	padding: 0 !important;
+}
+
+.RankingRow{
+	/* padding: 0 !important; */
+
+	border-width: thick !important;
+	border-color: red !important;
+	padding-left: 0 !important;
+	padding-right: 0;
+	margin-left: 0;
+	margin-right: 0;
+	min-height: var(--barSize);
+}
+
+.RankBox{
+	display: flex;
+	min-width:var(--barSize);
+	max-width: 250px;
+	min-height:var(--barSize);
+	height:100%;
+	background-color: red;
+	margin:0;
+	padding: 1vw;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-weight: bolder;
+	font-size: 2vw;
+}
+
+.RankBoxCol{
+	min-height: var(--barSize);
+	align-items: stretch;
+	padding: 0 !important;
+}
+
+.DltButton{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	border: none;
+	box-shadow: none;
+	right:0;
+	top:0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	font-size: 10px;
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	/* z-index: 5; */
+}
+.boxTextInput{
+	max-width: 30%;
+
+}
+.boxFontInput{
+	max-width: 15%;
+
+}

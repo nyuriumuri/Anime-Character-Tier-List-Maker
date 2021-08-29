@@ -1,0 +1,57 @@
+.ImageWrapper{
+	width: 6em;
+	position: relative;
+}
+.DockImage{
+	margin-top: 10px;
+	width:100%;
+	/* max-width: 150px; */
+	height: auto;
+}
+
+.RemoveDockImgBtn{
+	position: absolute;
+	right: -10px;
+	top:5px;
+
+	font-weight: bolder;
+
+	/* padding: 1rem 1.5rem; */
+
+
+}
+
+.DockContainer{
+	position: relative;
+	height: 25vh;
+	width:100%;
+	overflow-y: scroll;
+}
+
+.ChartContainer{
+	min-height: 50vh;
+	margin: auto !important;
+	max-height: 100vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+}
+
+.ChartContainerBarsWrapper{
+	max-height: 85vh;
+	overflow-y: scroll;
+	padding: 0;
+}
+.DropBox{
+	margin: auto;
+	margin-top: 3em;
+	width: 100px;
+	height:100px;
+}
+.QueryColumn{
+  /* max-width: 300px; */
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}

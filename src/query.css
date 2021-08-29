@@ -1,0 +1,49 @@
+.CharImg{
+	align-items: center;
+	vertical-align: center;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 0;
+	/* border-radius: 5%; */
+	width: 100%;
+}
+
+.CharName{
+	display:block;
+	margin:auto;
+	justify-content: center;
+	align-content: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.CharCard{
+	max-width: 120px;
+	margin: 0;
+	margin-top: 10px;
+	color: white;
+}
+
+.CharacterBar{
+	padding: 0 !important;
+
+	margin:0;
+	max-height: 90vh;
+	overflow-y: scroll;
+}
+
+.searchBarContainer{
+	width: 100%;
+	/* max-width:100px; */
+}
+.QueryContainer{
+	max-height: 100vh;
+
+	padding: 0 !important;
+}
+
+.CharacterBarRow{
+	justify-content: center !important;
+	max-width: 500px;
+}
