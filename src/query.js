@@ -180,7 +180,7 @@ function SearchBar(props){
 	const [searchPlaceHolder, setSearchPlaceHolder] = React.useState("Madoka Magica");
 	return(
 
-	 <Container className="searchBarContainer">
+	 <Container className="searchBarContainer pt-2" >
 	 <Form onSubmit={(e)=>{
 		 e.preventDefault();
 		 props.submitFunction(searchPlaceHolder);
