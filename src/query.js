@@ -171,7 +171,7 @@ function DockImage(props)
 	}));
 	return(
 		<div ref={drag}>
-		<img className="CharImg"src={url} alt={name} index={index} key={id} fluid/ >
+		<img className="CharImg" src={url} alt={name} index={index} key={id} / >
 		</div>
 	);
 }

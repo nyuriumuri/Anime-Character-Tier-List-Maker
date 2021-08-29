@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {FaRegTrashAlt} from "react-icons/fa";
 import {FiPlus, FiCamera} from "react-icons/fi";
+import { TouchBackend } from 'react-dnd-touch-backend';
 import {saveAs} from 'file-saver';
 import domtoimage from 'dom-to-image';
 import { CloseButton, Button, Container, Row, Col, Image, ButtonGroup} from 'react-bootstrap';
@@ -92,7 +93,7 @@ import './dock.css'
 		setBars(bars=>[...temp_bars]);
 	};
 	return(
-		<DndProvider backend={HTML5Backend}>
+		<DndProvider backend={('ontouchstart' in window)? 	TouchBackend : HTML5Backend}>
 		<Container fluid>
 			<Row>
 				<Col md="auto" className="QueryColumn">

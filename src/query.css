@@ -6,7 +6,7 @@
 	align-content: center;
 	margin: 0;
 	/* border-radius: 5%; */
-	width: 100%;
+	max-width: 100%;
 }
 
 .CharName{
@@ -19,17 +19,19 @@
 }
 
 .CharCard{
-	max-width: 120px;
+	max-width: 8vw;
+	min-width: 100px;
 	margin: 0;
 	margin-top: 10px;
 	color: white;
+	font-size: 1.2vw;
 }
 
 .CharacterBar{
 	padding: 0 !important;
 
 	margin:0;
-	max-height: 90vh;
+	max-height: 85vh;
 	overflow-y: scroll;
 }
 
@@ -39,8 +41,9 @@
 }
 .QueryContainer{
 	max-height: 100vh;
-
+	max-width: 33vw;
 	padding: 0 !important;
+	margin-bottom: 20px;
 }
 
 .CharacterBarRow{
