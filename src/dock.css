@@ -31,17 +31,22 @@
 .ChartContainer{
 	min-height: 50vh;
 	margin: auto !important;
-	max-height: 100vh;
-	overflow-y: scroll;
+	/* max-height: 100vh; */
+	/* overflow-y: scroll; */
 	overflow-x: hidden;
 
 
+}
+
+#ScreenshotElement{
+	width: 950px;
 }
 
 .ChartContainerBarsWrapper{
 	max-height: 85vh;
 	max-width: 65vw;
 	overflow-y: scroll;
+	/* overflow-x: hidden; */
 	padding: 0;
 }
 .DropBox{
@@ -56,5 +61,5 @@
   justify-content: center;
   align-items: center;
   margin-right: auto;
-  max-width: 30vw !important;
+  max-width: 33vw !important;
 }

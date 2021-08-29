@@ -15,7 +15,7 @@ export default function QueryComponent(props) {
 const [searchString, setSearchString] = React.useState("Madoka Magica");
 const [queryType, setQueryType] = React.useState("Anime");
   return (
-	  <Container className="QueryContainer" fluid>
+	  <Container className="QueryContainer">
 	  <Row>
 	  	<Col>
 			<SearchBar queryType={queryType} submitFunction={setSearchString} setQueryType={setQueryType} />
@@ -122,8 +122,8 @@ function Characters(props) {
 	 }
  }}
   return (
-      <Container className="CharacterBar" >
-	  <Row xs="auto" xl="auto" className="CharacterBarRow">
+      <Container >
+	  <Row xs="auto" xl="auto" className="CharacterBar" >
 	  <Col fluid>
         {status === "loading" ? (
           "Loading..."
@@ -149,10 +149,10 @@ function Characters(props) {
 	    </Row>
 		<Row >
 			<Col >
-				<Button variant="outline-secondary" onClick={()=>((page>1)?setPage(page-1):null)}><FaArrowLeft /></Button>
+				<Button variant="outline-secondary mt-2" onClick={()=>((page>1)?setPage(page-1):null)}><FaArrowLeft /></Button>
 			</Col>
 			<Col >
-				<Button variant="outline-secondary" onClick={()=>((page<totalPages)?setPage(page+1):null)}><FaArrowRight /></Button>
+				<Button variant="outline-secondary mt-2" onClick={()=>((page<totalPages)?setPage(page+1):null)}><FaArrowRight /></Button>
 			</Col>
 		</Row>
       </Container>
