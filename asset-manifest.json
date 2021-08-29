@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Anime-Character-Tier-List-Maker/static/css/main.a6c0e7b7.chunk.css",
-    "main.js": "/Anime-Character-Tier-List-Maker/static/js/main.3bc9fcd2.chunk.js",
-    "main.js.map": "/Anime-Character-Tier-List-Maker/static/js/main.3bc9fcd2.chunk.js.map",
+    "main.css": "/Anime-Character-Tier-List-Maker/static/css/main.9b1034de.chunk.css",
+    "main.js": "/Anime-Character-Tier-List-Maker/static/js/main.bd62f4fa.chunk.js",
+    "main.js.map": "/Anime-Character-Tier-List-Maker/static/js/main.bd62f4fa.chunk.js.map",
     "runtime-main.js": "/Anime-Character-Tier-List-Maker/static/js/runtime-main.87f551f1.js",
     "runtime-main.js.map": "/Anime-Character-Tier-List-Maker/static/js/runtime-main.87f551f1.js.map",
     "static/css/2.818011ed.chunk.css": "/Anime-Character-Tier-List-Maker/static/css/2.818011ed.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.b091d597.chunk.js.map": "/Anime-Character-Tier-List-Maker/static/js/3.b091d597.chunk.js.map",
     "index.html": "/Anime-Character-Tier-List-Maker/index.html",
     "static/css/2.818011ed.chunk.css.map": "/Anime-Character-Tier-List-Maker/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.a6c0e7b7.chunk.css.map": "/Anime-Character-Tier-List-Maker/static/css/main.a6c0e7b7.chunk.css.map",
+    "static/css/main.9b1034de.chunk.css.map": "/Anime-Character-Tier-List-Maker/static/css/main.9b1034de.chunk.css.map",
     "static/js/2.85363272.chunk.js.LICENSE.txt": "/Anime-Character-Tier-List-Maker/static/js/2.85363272.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/Anime-Character-Tier-List-Maker/static/media/logo.6ce24c58.svg"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.87f551f1.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.85363272.chunk.js",
-    "static/css/main.a6c0e7b7.chunk.css",
-    "static/js/main.3bc9fcd2.chunk.js"
+    "static/css/main.9b1034de.chunk.css",
+    "static/js/main.bd62f4fa.chunk.js"
   ]
 }
