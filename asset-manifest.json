@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/Anime-Character-Tier-List-Maker/static/css/main.9b1034de.chunk.css",
-    "main.js": "/Anime-Character-Tier-List-Maker/static/js/main.bd62f4fa.chunk.js",
-    "main.js.map": "/Anime-Character-Tier-List-Maker/static/js/main.bd62f4fa.chunk.js.map",
+    "main.js": "/Anime-Character-Tier-List-Maker/static/js/main.e36245bf.chunk.js",
+    "main.js.map": "/Anime-Character-Tier-List-Maker/static/js/main.e36245bf.chunk.js.map",
     "runtime-main.js": "/Anime-Character-Tier-List-Maker/static/js/runtime-main.87f551f1.js",
     "runtime-main.js.map": "/Anime-Character-Tier-List-Maker/static/js/runtime-main.87f551f1.js.map",
     "static/css/2.818011ed.chunk.css": "/Anime-Character-Tier-List-Maker/static/css/2.818011ed.chunk.css",
-    "static/js/2.85363272.chunk.js": "/Anime-Character-Tier-List-Maker/static/js/2.85363272.chunk.js",
-    "static/js/2.85363272.chunk.js.map": "/Anime-Character-Tier-List-Maker/static/js/2.85363272.chunk.js.map",
+    "static/js/2.566ed654.chunk.js": "/Anime-Character-Tier-List-Maker/static/js/2.566ed654.chunk.js",
+    "static/js/2.566ed654.chunk.js.map": "/Anime-Character-Tier-List-Maker/static/js/2.566ed654.chunk.js.map",
     "static/js/3.b091d597.chunk.js": "/Anime-Character-Tier-List-Maker/static/js/3.b091d597.chunk.js",
     "static/js/3.b091d597.chunk.js.map": "/Anime-Character-Tier-List-Maker/static/js/3.b091d597.chunk.js.map",
     "index.html": "/Anime-Character-Tier-List-Maker/index.html",
     "static/css/2.818011ed.chunk.css.map": "/Anime-Character-Tier-List-Maker/static/css/2.818011ed.chunk.css.map",
     "static/css/main.9b1034de.chunk.css.map": "/Anime-Character-Tier-List-Maker/static/css/main.9b1034de.chunk.css.map",
-    "static/js/2.85363272.chunk.js.LICENSE.txt": "/Anime-Character-Tier-List-Maker/static/js/2.85363272.chunk.js.LICENSE.txt",
+    "static/js/2.566ed654.chunk.js.LICENSE.txt": "/Anime-Character-Tier-List-Maker/static/js/2.566ed654.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/Anime-Character-Tier-List-Maker/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.87f551f1.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.85363272.chunk.js",
+    "static/js/2.566ed654.chunk.js",
     "static/css/main.9b1034de.chunk.css",
-    "static/js/main.bd62f4fa.chunk.js"
+    "static/js/main.e36245bf.chunk.js"
   ]
 }
