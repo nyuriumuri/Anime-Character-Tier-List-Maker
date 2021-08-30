@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {FaRegTrashAlt} from "react-icons/fa";
 import {FiPlus, FiCamera} from "react-icons/fi";
 import { TouchBackend } from 'react-dnd-touch-backend';
 import {saveAs} from 'file-saver';
-import domtoimage from 'dom-to-image';
+// import domtoimage from 'dom-to-image';
+import { toPng } from 'html-to-image';
 import { CloseButton, Button, Container, Row, Col, Image, ButtonGroup} from 'react-bootstrap';
 import { DndProvider, useDrag, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
@@ -92,6 +93,7 @@ import './dock.css'
 		};
 		setBars(bars=>[...temp_bars]);
 	};
+
 	return(
 		<DndProvider backend={('ontouchstart' in window)? 	TouchBackend : HTML5Backend}>
 		<Container fluid>
@@ -118,9 +120,9 @@ import './dock.css'
 								<ButtonGroup className="mr-4 pt-4">
 									<Button variant="outline-secondary" onClick={()=>pushBar()}><FiPlus /></Button>
 									<Button variant="outline-secondary" onClick={()=>popBar()}><FaRegTrashAlt /></Button>
-									<Button onClick={()=>domtoimage.toBlob(document.getElementById('ScreenshotElement'))
-								    .then(function (blob) {
-								        saveAs(blob, 'chart.png');
+									<Button onClick={()=>toPng(document.getElementById('ScreenshotElement'))
+										.then(function (dataurl) {
+								        saveAs(dataurl, 'chart.png');
 								    })}
 									variant="outline-secondary"><FiCamera /></Button>
 								</ButtonGroup>
