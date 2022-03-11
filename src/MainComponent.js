@@ -4,16 +4,34 @@ import {FiPlus, FiCamera} from "react-icons/fi";
 import { TouchBackend } from 'react-dnd-touch-backend';
 import {saveAs} from 'file-saver';
 // import domtoimage from 'dom-to-image';
-import { toPng } from 'html-to-image';
+
 import { CloseButton, Button, Container, Row, Col, Image, ButtonGroup} from 'react-bootstrap';
 import { DndProvider, useDrag, useDrop } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import QueryComponent from './query.js'
 import RankingBar from './rankingbar.js'
 import download from 'downloadjs';
+import html2canvas from 'html2canvas';
 import './dock.css'
- const MainComponent=()=>{
 
+
+
+
+ const MainComponent=()=>{
+	const screenshotRef= useRef(null);
+	const canvasRef=useRef(null);
+	const[canvasVisible, setCanvasVisible] = useState(false);
+	const showScreenshot=()=>{
+		html2canvas(screenshotRef.current, {
+			allowTaint: true,
+		}).then((canvas)=>{
+			document.getElementById('html2canvas')?.remove();
+			canvas.id='html2canvas';
+			canvas.className="ScreenshotCanvas"
+			document.getElementById("Overlay").appendChild(canvas);
+			setCanvasVisible(true);
+		});
+	};
 	const[bars,setBars]=useState([
 		{
 			color: "#ED254E",
@@ -96,6 +114,11 @@ import './dock.css'
 
 	return(
 		<DndProvider backend={('ontouchstart' in window)? 	TouchBackend : HTML5Backend}>
+	<div className="ScreenshotOverlay" id="Overlay"
+			style={{display: canvasVisible? "flex":"none"}}
+			onClick={()=>setCanvasVisible(false)}
+		>
+			</div>		
 		<Container fluid>
 			<Row>
 				<Col md="auto" className="QueryColumn">
@@ -103,7 +126,7 @@ import './dock.css'
 				</Col>
 						<Col className="ChartContainer">
 							<div className="ChartContainerBarsWrapper">
-							<div id="ScreenshotElement" >
+							<div ref={screenshotRef} id="ScreenshotElement" >
 							{
 								bars.map((bar,index)=>(
 									<Row key={index}>
@@ -120,10 +143,7 @@ import './dock.css'
 								<ButtonGroup className="mr-4 pt-4">
 									<Button variant="outline-secondary" onClick={()=>pushBar()}><FiPlus /></Button>
 									<Button variant="outline-secondary" onClick={()=>popBar()}><FaRegTrashAlt /></Button>
-									<Button onClick={()=>toPng(document.getElementById('ScreenshotElement'))
-										.then(function (dataurl) {
-								        saveAs(dataurl, 'chart.png');
-								    })}
+									<Button onClick={()=>showScreenshot()}
 									variant="outline-secondary"><FiCamera /></Button>
 								</ButtonGroup>
 							</Col>

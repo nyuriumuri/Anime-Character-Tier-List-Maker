@@ -10,5 +10,4 @@ Tierlist maker for Anime Characters, all images are fetched from anilist's api.
  - Character images can be dragged from the search panel  to the tierlist.
  -  Tier colors and text can be edited by pressing on any of the colored boxes.
 
-## Notes:
-Screenshot button only works with Firefox at the moment. 
+
