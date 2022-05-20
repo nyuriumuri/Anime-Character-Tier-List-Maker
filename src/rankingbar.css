@@ -65,6 +65,7 @@
 	align-items: center;
 	font-weight: bolder;
 	font-size: 2vw;
+	position: relative;
 }
 
 .RankBoxCol{
@@ -95,10 +96,18 @@
 	/* z-index: 5; */
 }
 .boxTextInput{
-	max-width: 30%;
+	width: 100px;
 
 }
 .boxFontInput{
-	max-width: 15%;
+	width: 5px;
+	padding: 0;
 
+}
+
+.BoxCustomizer{
+	z-index: 5;
+	position: absolute;
+	left:100%;
+	top: 0px;
 }

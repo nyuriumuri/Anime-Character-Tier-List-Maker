@@ -146,6 +146,23 @@ export default function RankingBar(props)
 		);
 }
 
+function useOutsideAlerter(ref, setClicked) {
+	useEffect(() => {
+	
+	  function handleClickOutside(event) {
+		if (ref.current && !ref.current.contains(event.target)) {
+		 
+			setClicked(false);
+		
+		}
+	  }
+	  document.addEventListener("mousedown", handleClickOutside);
+	  return () => {
+		document.removeEventListener("mousedown", handleClickOutside);
+	  };
+	}, [ref]);
+  }
+
 function RankBox(props){
 	const [boxColor, setBoxColor] = useState(props.color);
 	const [text, setText] = useState(props.text);
@@ -154,12 +171,16 @@ function RankBox(props){
 		// props.handleChange(props.index, color, props.text);
 		setBoxColor(color.hex);
 	};
+	
+	 
 	const [clicked, setClicked] = useState(false);
+	const wrapperRef = useRef(null);
+	useOutsideAlerter(wrapperRef,setClicked);
 	if(clicked)
 	{return(
-		<div>
-			<div className="RankBox" style={{backgroundColor: boxColor, fontSize: ""+fontsize+"px"}}  onClick={()=>setClicked(false)}>{text}</div>
-			<div>
+	
+			<div ref={wrapperRef} className="RankBox" style={{backgroundColor: boxColor, fontSize: ""+fontsize+"px"}}  onClick={()=>setClicked(false)}>{text}
+			<div className="BoxCustomizer" onClick={(e)=>e.stopPropagation()}>
 				<InputGroup>
 					<FormControl value={text} className="boxTextInput" onChange={(e)=>{setText(e.target.value)}}></FormControl>
 					<FormControl value={fontsize} type="number" className="boxFontInput" onChange={(e)=>{setFontSize(e.target.value)}}></FormControl>
